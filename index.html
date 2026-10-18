@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nugget for Y1: Yummy and stable CFW</title>
+  <link rel="icon" type="image/png" href="favi.png">
+  <meta name="description" content="Custom firmware for the Innioasis Y1. 2.5x battery life. Rockbox and Linux. Easy to Install.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="i18n.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!--HEADER-->
+    <header class="header">
+      <div class="header-container">
+        <a class="logo" href="#top"><img class="hero-logo" src="favi.png"></a>
+        <nav>
+          <a href="#features">Why pick me?</a>
+          <a href="#install">Install</a>
+          <a href="#technical">Technical</a>
+          <button type="button" class="lang-btn" id="langBtn">한국어</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+
+      <!--HERO-->
+      <section class="window hero">
+        <div class="titlebar"><span>nugget_for_y1</span><span class="titlebar-buttons"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="hero-body">
+          <img class="hero-img" src="1.png" alt="The Innioasis Y1 running Rockbox">
+          <div class="hero-text">
+            <h1>The most stable CFW for your Innioasis Y1: Nugget for Y1</h1>
+            <p class="lead">Nugget for Y1 makes your Innioasis Y1 last longer, be faster and easier to use with Rockbox. Based on Linux, running Rockbox, it's stable and open.</p>
+            <p>
+              <a class="btn" href="#install">Install today</a>
+              <a class="btn btn-alt" href="#install">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="scroll-toast" id="scrollToast">
+        <img src="down.png" style="width: 30px; height: 30px; flex: 1;"><span>Scroll down</span>
+      </div>
+
+      <!--BATTERY-->
+      <section class="window battery">
+        <div class="titlebar"><span>battery_life</span><span class="titlebar-buttons"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="window-body">
+          <h2>2.5x the battery life</h2>
+          <p class="lead">It's really the same device??</p>
+          <img class="cimg" src="c/1.png">
+
+          <div class="meter">
+            <p class="meter-label">Rockbox on Android</p>
+            <div class="meter-track"><div class="meter-fill meter-old" style="--fill: 20%">20h</div></div>
+          </div>
+          <div class="meter">
+            <p class="meter-label">Stock firmware (Android)</p>
+            <div class="meter-track"><div class="meter-fill meter-old" style="--fill: 50%">30h</div></div>
+          </div>
+          <div class="meter">
+            <p class="meter-label">With Nugget Y1!</p>
+            <div class="meter-track"><div class="meter-fill meter-new" style="--fill: 100%">50h</div></div>
+          </div>
+          <p class="note">Battery life is tested with AAC audio playing through wired earphones, volume at 50dB, WiFi and Bluetooth disabled. Visuals are an approximation. Battery hours are rounded up to the nearby value. Values may not be accurate and can fluctuate with variables.</p>
+        </div>
+      </section>
+
+      <!--FEATURES-->
+      <section class="window" id="features">
+        <div class="titlebar"><span>why_pick_me</span><span class="titlebar-buttons"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="window-body">
+          <img class="cimg" src="c/3.png">
+          <h2>Why not just use the Android version?</h2>
+          <p class="lead">Normally, Rockbox for the Y1 run as an app on top of Android 4.2.2. Why pick us?</p>
+          <div class="grid">
+            <article class="card"><h3>No battery drain</h3><p>Android keeps a whole, dated phone operating system awake behind your music. We took it out and you get 2.5x the battery life.</p></article>
+            <article class="card"><h3>Straight into Rockbox</h3><p>Power on and in under 10 seconds you're in. Power off or reboot right from the Rockbox menu.</p></article>
+            <article class="card"><h3>Properly loud</h3><p>The headphone amp runs at full strength, matching the stock maximum volume.</p></article>
+            <article class="card"><h3>Adjust the power</h3><p>Save battery in power-saver mode or overclock for heavy stuff.</p></article>
+            <article class="card"><h3>Support iPod Rockbox themes</h3><p>Natively supports iPod themes. Just adjust the screen size to Classic mode.</p></article>
+            <article class="card"><h3>It's still all Rockbox</h3><p>Every audio format, themes and fonts are supported.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!--INSTALL-->
+      <section class="window" id="install">
+        <div class="titlebar"><span>wizard</span><span class="titlebar-buttons"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="window-body">
+          <img class="cimg" src="c/2.png">
+          <h2>Installing takes a few minutes</h2>
+          <h3>Nugget for Y1 Tool (Recommended)</h3>
+          <ol class="steps">
+            <li><h3>Download our tool</h3><p>We built a tool for Mac and Windows that automatically sets up everything. It's safe, check our source code.</p></li>
+            <li><h3>Follow the instructions on screen</h3><p>The app will guide you through the process of flashing and set up everything automatically.</p></li>
+            <li><h3>Turn it on and configure</h3><p>When you're done, you can adjust settings and download themes.</p></li>
+          </ol>
+          <p><a class="btn" href="https://github.com/YOUR-NAME/YOUR-REPO/releases">Download tool</a></p>
+          <p class="note">WARNING: Flashing replaces the stock firmware. While extremely rare, it can cause the malfunction of the device. We are not responsible of the damage to your device. Only the Y1 TypeA device is supported.</p>
+          <p style="text-align: center;">Or</p>
+          <details>
+            <summary>Innioasis Updater CE</summary>
+            <ol>
+              <li>
+                <h3>Download Innioasis Updater CE</h3>
+                <p>Nugget for Y1 is now available in the Innioasis Updater CE.</p>
+              </li>
+              <li>
+                <h3>Change the software to Nugget</h3>
+                <p>Once the app is open and drivers are installed, select 'Nugget for Y1' in the software dropdown. The app will guide you through the process of flashing.</p>
+              </li>
+              <li>
+                <h3>Turn it on and plug it in</h3>
+                <p>When flashing is complete, turn on Y1. You will see a screen telling you to plug in the device to the PC, do this.</p>
+              </li>
+              <li>
+                <h3>Download .rockbox and put it on the device</h3>
+                <p>Download the ZIP from our GitHub. Extract it to the Y1, making sure .rockbox is there.</p>
+              </li>
+              <li>
+                <h3>Unplug it, turn it on and configure</h3>
+                <p>When you're done, you can adjust settings and download themes.</p>
+              </li>
+            </ol>
+
+            <p>
+              <a class="btn" href="https://innioasis.app/">Download Innioasis Updater</a>
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!--INFO-->
+      <section class="window" id="info">
+        <div class="titlebar"><span>info</span><span class="titlebar-buttons"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="window-body">
+          <h2>Work in progress</h2>
+          <p class="lead">Because this is our own stack of software, 100% feature parity is not certain.</p>
+          <h3>Not working</h3>
+          <p>Wifi, Bluetooth, Vibration, Internal Speaker, FM Radio</p>
+          <h3>Partially working</h3>
+          <p>N/A</p>
+          <h2>About</h2>
+          <!--FOOTER-->
+          <footer class="footer">
+            <img src="favi.png" style="width: 200px;margin: 40px auto 40px auto;">
+            <p>Nugget Audio Brand</p>
+            <p>Not affiliated with Innioasis. Built on the open source <a href="https://www.rockbox.org">Rockbox</a> project.</p>
+          </footer>
+        </div>
+      </section>
+
+      <!--TECHNICAL-->
+      <section class="window" id="technical">
+        <div class="titlebar"><span>technical</span><span class="titlebar-buttons" aria-hidden="true"><span>🗕</span><span>🗖</span><span>🗙</span></span></div>
+        <div class="window-body">
+          <h2>Technical documentation</h2>
+          <p class="lead">Nugget for Y1 is Hosted Rockbox running on a minimal Linux system, without an Android userspace, on the Innioasis Y1 (MediaTek MT6572, dual-core Cortex-A7).</p>
+
+          <h3>System overview</h3>
+          <ol class="plain">
+            <li><strong>Boot:</strong> The MTK preloader and <code>lk</code> load the Linux kernel (<code>zImage</code>) directly into an initramfs root filesystem.</li>
+            <li><strong>Init:</strong> A minimal C <code>/init</code> process mounts <code>/proc</code>, <code>/sys</code> and <code>/dev</code>, powers on the MT6323 headphone amplifier through <code>/dev/eac</code>, enables the audio clocks and activates click wheel scanning. It then detects and mounts the physical microSD card, links user directories into <code>/</code>, initializes USB Mass Storage and executes <code>/rockbox</code>.</li>
+            <li><strong>Display:</strong> Direct Linux framebuffer output at 480x360, 32-bit ARGB8888, with dynamic bit shifts and an unblank refresh.</li>
+            <li><strong>Input:</strong> Linux evdev (<code>/dev/input/event0</code> to <code>event15</code>) mapped to the click wheel, touch buttons, volume keys and center switch. Dedicated keymap contexts exist for the pitch screen, the quick screen and menus.</li>
+            <li><strong>Audio:</strong> Direct PCM playback through <code>/dev/eac</code> with dynamic 44.1 kHz and 48 kHz switching, +12 dB analog gain and a logarithmic volume scale from -74 dB to +6 dB.</li>
+            <li><strong>Storage:</strong> Only the physical microSD card is used. The internal eMMC is excluded. Supported file systems are <code>vfat</code>, <code>exfat</code> (SDXC, 256 GB and larger), <code>ntfs</code> and <code>ext4</code>, including multi-partition cards. <code>PIVOT_ROOT</code> presents the card as <code>/</code> to plugins.</li>
+            <li><strong>Missing <code>.rockbox</code> directory:</strong> A warning is shown on screen and USB Mass Storage remains active. Startup resumes once the directory is present on the card.</li>
+            <li><strong>Power management:</strong> CPU frequency scaling from 598 MHz to 1.3 GHz, an optional single-core mode, display timeout with backlight fading, and Power Off and Reboot entries in the System menu.</li>
+          </ol>
+
+          <h3>Hardware specification</h3>
+          <div class="table-wrap">
+            <table>
+              <tr><th>SoC</th><td>MediaTek MT6572, 2x Cortex-A7, 598 MHz to 1300 MHz, NEON, VFPv4</td></tr>
+              <tr><th>Memory</th><td>512 MB LPDDR2</td></tr>
+              <tr><th>Display</th><td>480x360 landscape, 32-bit ARGB8888 framebuffer (<code>/dev/graphics/fb0</code>, <code>/dev/fb0</code>), stride 1920 bytes</td></tr>
+              <tr><th>Audio</th><td>MT6323 PMIC codec and amplifier (<code>/dev/eac</code>), 44.1 kHz and 48 kHz dynamic sink clock</td></tr>
+              <tr><th>Primary storage</th><td>microSD partition 1 (<code>/dev/block/mmcblk1p1</code> or raw <code>mmcblk1</code>), mounted at <code>/mnt/sdcard</code> and mapped to <code>/</code></td></tr>
+              <tr><th>Additional partitions</th><td>Partition 2 at <code>/mnt/extsd</code> (Rockbox drive 1, <code>&lt;microSD1&gt;</code>), partition 3 at <code>/mnt/extsd2</code>, and so on</td></tr>
+              <tr><th>USB storage</th><td>Android USB Mass Storage gadget, LUN0 bound to the microSD card before enable</td></tr>
+              <tr><th>Boot image</th><td>Android <code>ANDROID!</code> header, 2048-byte pages. Kernel load address <code>0x10008000</code>, ramdisk load address <code>0x11000000</code>, MTK header magic <code>0x58881688</code></td></tr>
+              <tr><th>Partition limit</th><td><code>BOOTIMG</code> = <code>0x600000</code> (6,291,456 bytes)</td></tr>
+            </table>
+          </div>
+
+          <h3>Implementation notes</h3>
+          <details class="fix">
+            <summary>Volume scaling</summary>
+            <p><strong>Cause:</strong> <code>sound_set_volume</code> passes the volume to the codec in centibels (-10 dB is -100). <code>pcm-eac.c</code> multiplied this value by 10 again, so reducing the volume by 1 or 2 dB produced silence. <code>dummy_codec.c</code> also compared centibels against <code>-74</code>, which muted output at -7.4 dB.</p>
+            <p><strong>Resolution:</strong> The additional multiplication was removed, and <code>audiohw_set_volume</code> passes centibels directly to <code>pcm_set_master_volume()</code>. The mute threshold is <code>-740</code>, and <code>dummy_codec.c</code> compares against <code>DUMMY_VOLUME_MIN * 10</code>. The volume range is -74 dB to +6 dB in 1 dB steps. Analog headphone gain remains at +12 dB (<code>0x0014</code>).</p>
+          </details>
+          <details class="fix">
+            <summary>Dynamic sample rate switching</summary>
+            <p><strong>Cause:</strong> <code>sink_set_freq()</code> receives an index into <code>sink->caps.samprs</code> (0 for 44.1 kHz, 1 for 48 kHz). The function switched on <code>case 48000</code>, which never matched, so the default of 44.1 kHz was always used. 48 kHz tracks played approximately 8.8% slower than normal.</p>
+            <p><strong>Resolution:</strong> The index is translated with <code>unsigned long sampr = (freq &lt; HW_NUM_FREQ) ? hw_freq_sampr[freq] : freq;</code> and the function switches on <code>sampr</code>. This configures the AFE DL1, IRQ MCU, I2S output and PMIC downlink registers for 48 kHz.</p>
+          </details>
+          <details class="fix">
+            <summary>Advanced Key Lock (selective softlock)</summary>
+            <p><strong>Location:</strong> Settings &gt; General Settings &gt; System &gt; Advanced Key Lock.</p>
+            <p><strong>Keymap:</strong> <code>button_context_wps[]</code> did not chain to <code>CONTEXT_STD</code> and therefore lacked standard actions such as <code>ACTION_STD_KEYLOCK</code>. It now ends with <code>LAST_ITEM_IN_LIST__NEXTLIST(CONTEXT_STD)</code>. <code>button_context_tree</code> is chained to <code>CONTEXT_LIST</code>, and <code>ACTION_LIST_VOLUP</code> and <code>ACTION_LIST_VOLDOWN</code> are defined in <code>button_context_standard</code>.</p>
+            <p><strong>Filtering:</strong> While locked, the following may be left enabled: volume (keys, and the wheel in the WPS), play and pause, and skip and seek. Changes apply immediately because <code>selectivesoftlock_set_mask</code> calls <code>set_selective_softlock_actions</code> on every toggle.</p>
+          </details>
+          <details class="fix">
+            <summary>Center button HOLD mode</summary>
+            <p>The Y1 has no hardware hold switch, so HOLD is implemented as a state machine on the center button. The button release that ends a lock or unlock operation is consumed and does not trigger a user interface action. Operation is described under Key lock operation below.</p>
+          </details>
+          <details class="fix">
+            <summary>Speed and pitch screen</summary>
+            <p>Button mapping for <code>CONTEXT_PITCHSCREEN</code>: the click wheel adjusts pitch in fine steps, the volume buttons in coarse steps, Left and Right nudge the value, Center toggles the mode and Menu exits.</p>
+          </details>
+          <details class="fix">
+            <summary>Settings persistence</summary>
+            <p><code>ROCKBOX_NO_TEMP_SETTINGS_FILE</code> causes settings to be written directly to <code>config.cfg</code>. An explicit <code>sync()</code> and the <code>flush</code> mount option commit settings and database updates to the card immediately.</p>
+          </details>
+          <details class="fix">
+            <summary>Plugin execution</summary>
+            <p>Plugins are <code>.rock</code> shared libraries loaded through <code>dlopen()</code> and <code>PROT_EXEC</code> mmap. The card is mounted with <code>fmask=0000,dmask=0000</code> so that the files have execute permission.</p>
+          </details>
+
+          <h3>Key lock operation</h3>
+          <div class="table-wrap">
+            <table>
+              <tr><th>Lock</th><td>Hold the Center button for 5 seconds. The display shows <code>Key lock on</code>. The release is consumed.</td></tr>
+              <tr><th>Unlock</th><td>Hold the Center button for 5 seconds until <code>Click Center to unlock</code> is displayed. Release it, then click Center once within 5 seconds. The display shows <code>Key lock off</code>. The click is consumed.</td></tr>
+              <tr><th>While locked</th><td>Single clicks and holds shorter than 5 seconds display <code>Key lock on</code> and leave the device locked.</td></tr>
+            </table>
+          </div>
+
+          <h3>Manual installation</h3>
+          <p>The installer tool performs these steps automatically. The manual procedure is provided for reference.</p>
+          <p><strong>1. Prepare the microSD card.</strong> Format the card as FAT32 or exFAT and extract <code>rockbox_sdcard.zip</code> to the root of the card so that <code>.rockbox</code> is at the top level:</p>
+      <pre>(microSD root)/
+      ├── .rockbox/
+      │   ├── codecs/
+      │   ├── rocks/
+      │   ├── fonts/
+      │   ├── langs/
+      │   └── ...
+      └── Music/</pre>
+          <p><strong>2. Flash <code>boot_rockbox.img</code>.</strong></p>
+          <ol class="plain">
+            <li>Open SP Flash Tool, select <strong>Scatter-loading</strong> and choose <code>!stock_rom/MT6572_Android_scatter.txt</code>.</li>
+            <li>Deselect all partitions except <code>BOOTIMG</code>.</li>
+            <li>Set the <code>BOOTIMG</code> location to <code>boot_rockbox.img</code>.</li>
+            <li>Click <strong>Download</strong>.</li>
+            <li>Power off the Y1 completely and connect it to the computer over USB.</li>
+            <li>When "Download OK" is displayed, disconnect the device and power it on.</li>
+          </ol>
+
+          <h3>Release contents</h3>
+          <div class="table-wrap">
+            <table>
+              <tr><th><code>boot_rockbox.img</code></th><td>Flashable boot image containing the kernel and initramfs. Size: 5,976,064 bytes, leaving 315,392 bytes of headroom in the 6 MB <code>BOOTIMG</code> partition.</td></tr>
+              <tr><th><code>rockbox_sdcard.zip</code></th><td>The <code>.rockbox</code> directory: codecs (MP3, FLAC, ALAC, AAC, Opus, DSD, WavPack), fonts, themes, and <code>.rock</code> plugins including Doom, Wolf3D, Duke3D, Quake, Rockboy, Chessbox and Sudoku.</td></tr>
+              <tr><th><code>rockbox</code></th><td>Standalone ARMv7 hard-float Rockbox executable launched by <code>/init</code>.</td></tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+<script>
+  const scrollToast = document.getElementById("scrollToast");
+  const main = document.querySelector("main");
+  const windows = document.querySelectorAll("main > .window");
+
+  // Hide the toast as soon as the next window enters the viewport.
+  const toastObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          scrollToast.classList.add("hidden");
+          toastObserver.disconnect();
+        }
+      });
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  const nextWindow = document.querySelector("main > .window:nth-of-type(2)");
+
+  if (nextWindow) {
+    toastObserver.observe(nextWindow);
+  }
+
+  // Preserve the existing window activation behavior.
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    },
+    {
+      root: main,
+      threshold: 0.6
+    }
+  );
+
+  windows.forEach((window) => observer.observe(window));
+</script>
+</html>
