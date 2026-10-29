@@ -32,20 +32,6 @@ h3 {
 .logo {
   text-decoration: none;
 }
-@font-face {
-  font-family: Shag-Lounge;
-  src: url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.eot");
-  src: url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/468c67c3a57b93870b455fc4ec30dbe1.svg#Shag-Lounge")
-      format("svg");
-}
 :root {
   --page-bg: #8fd3ff;
   --window-bg: rgba(244, 244, 251, 0.6);
@@ -58,7 +44,7 @@ h3 {
   --silver: #c9cde0;
   --silver-light: #ffffff;
   --silver-dark: #7d819c;
-  --font-heading: "Shag-Lounge", "Jua", "Fredoka", "Trebuchet MS", "Comic Sans MS", sans-serif;
+  --font-heading: "Jua", "Fredoka", "Trebuchet MS", "Comic Sans MS", sans-serif;
   --font-body: "Fredoka", "Noto Sans KR", Verdana, Tahoma, Geneva, sans-serif;
   --page-width: 920px;
   --gap: 28px;
