@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nugget for Y1 Post Installation Steps (Innioasis Updater CE)</title>
+  <link rel="icon" type="image/png" href="../../favi.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="i18n.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!--HEADER-->
+    <header class="header">
+      <div class="header-container">
+        <a class="logo" href="#top"><img class="hero-logo" src="../../favi.png"></a>
+        <nav>
+          <a href="https://github.com/norocoral/nugget-y1">GitHub</a>
+          <button type="button" class="lang-btn" id="langBtn">한국어</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+
+      <!--HERO-->
+      <section class="window hero">
+        <div class="titlebar"><span>Start</span></div>
+        <div class="hero-body">
+          <img class="hero-img" src="../../1.png" alt="The Innioasis Y1 running Rockbox">
+          <div class="hero-text">
+            <h1>Welcome to Nugget for Y1</h1>
+            <p class="lead">Please read the steps below to finalize the installation.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="scroll-toast" id="scrollToast">
+        <img src="../../down.png" style="width: 30px; height: 30px; flex: 1;"><span>Scroll down</span>
+      </div>
+
+      <section class="window" id="1">
+        <div class="titlebar"><span>Step 1</span></div>
+        <div class="window-body">
+          <h2>Download files required</h2>
+          <p class="lead">You will need to download files to proceed with next steps.</p>
+          <img class="cimg" src="../../c/1.png">
+
+          <ol class="steps">
+            <li><h3>Download ZIP file on GitHub</h3><p>Download 'rockbox_sdcard.zip' in the latest release.</p></li>
+            <li><h3>Extract the ZIP file</h3><p>Once extracted, you should see a '.rockbox' and '.system' folder.*</p></li>
+          </ol>
+          <p><a class="btn" href="https://github.com/norocoral/nugget-y1/releases/">Download</a></p>
+          <p class="note">*Press Cmd + Shift + Period to see hidden folders</p>
+        </div>
+      </section>
+
+      <section class="window" id="2a">
+        <div class="titlebar"><span>Step 2.A</span></div>
+        <div class="window-body">
+          <h2>I am new, enter the device in USB mode</h2>
+          <p class="lead">To copy files over initally, you will need to do this. Do not see this screen? You are updating, scroll down</p>
+
+          <ol class="steps">
+            <li><h3>Turn it on after flashing</h3><p>Press and hold the center button</p></li>
+            <li><h3>Plug it in</h3><p>Once this is displayed on screen, you may insert USB.</p></li>
+          </ol>
+          <img src="Download.png"></figure>
+      </section>
+
+      <section class="window" id="2b">
+        <div class="titlebar"><span>Step 2.B</span></div>
+        <div class="window-body">
+          <h2>I am updating from an earlier version of Nugget, enter the device in USB mode</h2>
+          <p class="lead">To copy files over initally, you will need to do this. Skip this if you did the previous step (Step 2.A)</p>
+
+          <ol class="steps">
+            <li><h3>Turn it on after flashing</h3><p>Press and hold the center button</p></li>
+            <li><h3>Rapidly press MENU after powering on + see black logo</h3><p>This will enter Bootpick mode. You do not need to do this if you enabled Bootloader Menu in Rockbox > Settings > Nugget > Bootloader Menu</p></li>
+            <li><h3>Open USB Mode</h3><p>You may need to scroll all the way to the end</p></li>
+            <li><h3>Plug it in</h3><p>Once this is displayed on screen, you may insert USB.</p></li>
+          </ol>
+          <img src="USB.png"></figure>
+      </section>
+
+      <section class="window" id="3">
+        <div class="titlebar"><span>Step 3</span></div>
+        <div class="window-body">
+          <h2>Put the extracted rockbox_sdcard files on the Y1</h2>
+          <p class="lead">You may need to manually shut the device down in order to boot.</p>
+
+          <ol class="steps">
+            <li><h3>Copy the extracted folders</h3><p>.rockbox, .system and any others</p></li>
+            <li><h3>Paste them in the root of the Y1</h3><p>Replace files if requested</p></li>
+            <li><h3>Eject</h3><p>You should eject after every time you plug it into a computer.</p></li>
+          </ol>
+          <img src="CopyFile.gif"></figure>
+      </section>
+    </main>
+  </div>
+</body>
+
+<script>
+  const scrollToast = document.getElementById("scrollToast");
+  const main = document.querySelector("main");
+  const windows = document.querySelectorAll("main > .window");
+
+  // Hide the toast as soon as the next window enters the viewport.
+  const toastObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          scrollToast.classList.add("hidden");
+          toastObserver.disconnect();
+        }
+      });
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  const nextWindow = document.querySelector("main > .window:nth-of-type(2)");
+
+  if (nextWindow) {
+    toastObserver.observe(nextWindow);
+  }
+
+  // Preserve the existing window activation behavior.
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    },
+    {
+      root: main,
+      threshold: 0.6
+    }
+  );
+
+  windows.forEach((window) => observer.observe(window));
+</script>
+</html>
