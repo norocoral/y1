@@ -50,9 +50,8 @@ const TRANSLATIONS = [
   [`To copy files over initally, you will need to do this. Skip this if you did the previous step (Step 2.A)`,
    `처음에 파일을 복사하려면 이 작업을 해야 해요. 이전 단계(Step 2.A)를 이미 진행했다면 건너뛰세요.`],
   [`Rapidly press MENU after powering on + see black logo`, `전원을 켜고 검은 로고가 보이면 MENU 버튼을 빠르게 누르기`],
-  [`This will enter Bootpick mode. You do not need to do this if you enabled Bootloader Menu in Rockbox > Settings > Nugget > Bootloader Menu`,
-   `그러면 Bootpick 모드로 진입해요. Rockbox > Settings > Nugget > Bootloader Menu를 활성화했다면 이 과정을 거치지 않아도 돼요.`],
-  [`Open USB Mode`, `USB 모드 열기`],
+  [`This will open Configapp.`, `그러면 Configapp이 열려요.`],
+  [`Enable USB mass storage mode`, `USB 대용량 저장소 모드 활성화`],
   [`You may need to scroll all the way to the end`, `맨 끝까지 스크롤해야 할 수도 있어요.`],
 
   /* ---------- Step 3 ---------- */
@@ -64,6 +63,21 @@ const TRANSLATIONS = [
   [`Replace files if requested`, `덮어쓰기 확인이 뜨면 파일을 교체하세요`],
   [`Eject`, `안전하게 꺼내기`],
   [`You should eject after every time you plug it into a computer.`, `컴퓨터에 연결할 때마다 매번 안전하게 꺼내기를 해야 해요.`],
+
+  /* ---------- Extra: Themes ---------- */
+  [`Install themes in Rockbox`, `Rockbox에 테마 설치하기`],
+  [`You can install both iPod 240p classic themes in Rockbox.`, `Rockbox에 iPod 240p 클래식 테마를 설치할 수 있어요.`],
+  [`Go to Rockbox Themes Website and download a theme`, `Rockbox 테마 웹사이트에서 테마 다운로드`],
+  [`This is for iPod 240p themes.`, `iPod 240p용 테마 페이지예요.`],
+  [`Open`, `열기`],
+  [`Extract the files and put .rockbox in your Y1`, `압축을 풀고 .rockbox 폴더를 Y1에 넣기`],
+  [`Merge if it asks you, replace files.`, `병합 여부를 묻는 창이 뜨면 병합하고, 파일을 교체하세요.`],
+  [`Enable Classic mode`, `Classic 모드 활성화`],
+  [`Settings -> General Settings -> Nugget -> Device -> Screen Resolution -> Classic`,
+   `Settings -> General Settings -> Nugget -> Device -> Screen Resolution -> Classic`],
+  [`Apply theme`, `테마 적용하기`],
+  [`Settings -> Themes -> Browse Theme Files. For some themes, disabling "Dynamic Colors" is required.`,
+   `Settings -> Themes -> Browse Theme Files로 이동하세요. 일부 테마는 "Dynamic Colors"를 꺼야 정상 작동해요.`],
 ];
 
 /* Page title and search-result description */
